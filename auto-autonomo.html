@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envío de Paquetes con Autos Autónomos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/auto.css">
+</head>
+<body>
+  <div class="container mt-5">
+
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#" onclick="window.history.back();">Atrás</a></li>
+
+    <h1>Formulario de Envío de Paquetes con Autos Autónomos</h1>
+    <p>Rellena los siguientes campos para realizar el envío de tu paquete de manera rápida y segura con autos autónomos.</p>
+
+    <form>
+      <div class="mb-3">
+        <label for="nombreRemitente" class="form-label">Nombre del Remitente</label>
+        <input type="text" class="form-control" id="nombreRemitente" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="direccionRemitente" class="form-label">Dirección del Remitente</label>
+        <input type="text" class="form-control" id="direccionRemitente" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="ciudadRemitente" class="form-label">Ciudad del Remitente</label>
+        <input type="text" class="form-control" id="ciudadRemitente" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="codigoPostalRemitente" class="form-label">Código Postal del Remitente</label>
+        <input type="text" class="form-control" id="codigoPostalRemitente" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="telefonoRemitente" class="form-label">Número de Teléfono del Remitente</label>
+        <input type="tel" class="form-control" id="telefonoRemitente" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="nombreDestinatario" class="form-label">Nombre del Destinatario</label>
+        <input type="text" class="form-control" id="nombreDestinatario" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="direccionDestinatario" class="form-label">Dirección del Destinatario</label>
+        <input type="text" class="form-control" id="direccionDestinatario" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="ciudadDestinatario" class="form-label">Ciudad del Destinatario</label>
+        <input type="text" class="form-control" id="ciudadDestinatario" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="codigoPostalDestinatario" class="form-label">Código Postal del Destinatario</label>
+        <input type="text" class="form-control" id="codigoPostalDestinatario" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="telefonoDestinatario" class="form-label">Número de Teléfono del Destinatario</label>
+        <input type="tel" class="form-control" id="telefonoDestinatario" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="descripcionPaquete" class="form-label">Descripción del Paquete</label>
+        <textarea class="form-control" id="descripcionPaquete" rows="3" required></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="pesoPaquete" class="form-label">Peso del Paquete (kg)</label>
+        <input type="number" class="form-control" id="pesoPaquete" step="0.1" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="tipoVehiculo" class="form-label">Tipo de Vehículo Autónomo</label>
+        <select class="form-select" id="tipoVehiculo">
+          <option selected>Selecciona el tipo de vehículo</option>
+          <option value="sedan">Auto Autónomo Tipo Sedan</option>
+          <option value="camioneta">Auto Autónomo Tipo Camioneta</option>
+          <option value="drone">Dron Autónomo (para distancias más cortas)</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="opcionesEntrega" class="form-label">Opciones de Entrega</label>
+        <select class="form-select" id="opcionesEntrega">
+          <option selected>Selecciona el tipo de entrega</option>
+          <option value="expr">Entrega Exprés (2-4 horas)</option>
+          <option value="stand">Entrega Estándar (24 horas)</option>
+          <option value="eco">Entrega Ecológica (48-72 horas, opción más económica)</option>
+        </select>
+      </div>
+
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary">Enviar Paquete</button>
+      </div>
+    </form>
+
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
